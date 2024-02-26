@@ -2,9 +2,9 @@
 //TODO Написать функцию accum: accum("abcd") -> "A-Bb-Ccc-Dddd", accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy", accum("cwAt") -> "C-Ww-Aaa-Tttt"
 //TODO Написать функцию, которая выдаёт сумму выручку на основании входного формата данных
 
-const arrList = [15, 10, 13, 18, 12, 'q', 'w', 'k', 'hello'];
+const arrList = [15, 10, 13, 18, 12, -44, -50, 'q', 'w', 'k', 'hello'];
 function numbersFilter(myList) {
-    return myList.filter((el) => +(el))
+    return myList.filter((el) => +(el) > 0)
 };
 console.log(`Result: ${numbersFilter(arrList)}`);
 
